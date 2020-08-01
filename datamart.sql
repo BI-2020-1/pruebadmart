@@ -230,3 +230,8 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-07-31 19:38:54
+
+CREATE USER 'powerbi'@'%' IDENTIFIED BY '12345';
+GRANT ALL PRIVILEGES ON `ventas_dm`.* TO 'powerbi'@'%' IDENTIFIED BY '12345';
+
+
